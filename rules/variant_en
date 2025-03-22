@@ -1,7 +1,7 @@
 <!--typo-birman-start-en-->
         <variant>
           <configItem>
-            <name>typo-birman-en</name>
+            <name>birman</name>
             <description>English (Typographic by Ilya Birman)</description>
           </configItem>
         </variant>

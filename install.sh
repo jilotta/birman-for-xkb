@@ -28,5 +28,5 @@ sudo "$BASE/helper/xmladd.py" /usr/share/X11/xkb/rules/evdev.xml "$BASE/rules/va
 sudo rm /usr/share/X11/xkb/rules/evdev.xml
 sudo mv /tmp/evdev.xml /usr/share/X11/xkb/rules/evdev.xml
 
-echo -e "\033[0;32mРаскладки успешно установлены!\!\033[0m"
+echo -e "\033[0;32mРаскладки успешно установлены!\033[0m"
 echo "Не забудьте перезагрузиться."

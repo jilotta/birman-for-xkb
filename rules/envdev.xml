@@ -1,7 +1,7 @@
 <!--typo-birman-start-->
     <layout>
       <configItem>
-        <name>typo-birman-ru</name>
+        <name>birman</name>
         <shortDescription>Russian (Typographic by Ilya Birman)</shortDescription>
         <description>Russian (Typographic by Ilya Birman)</description>
         <languageList>
@@ -15,7 +15,7 @@
     </layout>
     <layout>
       <configItem>
-        <name>typo-birman-en</name>
+        <name>birman</name>
         <shortDescription>English (Typographic by Ilya Birman)</shortDescription>
         <description>English (Typographic by Ilya Birman)</description>
         <languageList>
