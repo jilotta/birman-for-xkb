@@ -15,23 +15,26 @@
 
 ## Установка
 
-1. Скопируйте команду приведенную ниже, включая последний слэш:
+1. Установите Python.
 
+2. Скопируйте команду, приведенную ниже:
+
+    ```bash
+python3 -c "import os, sys
+from urllib.request import urlopen
+p = 'https://github.com/jilotta/birman-for-xkb/archive/refs/tags/v3.7.tar.gz'
+with open('/tmp/birman.tgz','bw') as f: f.write(urlopen(p).read())" &&
+tar xf /tmp/birman.tgz -C /tmp && \
+cd /tmp/birman-for-xkb-3.7 && \
+sudo /tmp/birman-for-xkb-3.7/install.sh
     ```
-    sudo apt-get -qq -y install wget && \
-    wget -q -O /tmp/typo-birman-master.tar.gz https://github.com/vanushah/birman-typography-layouts-for-ubuntu/releases/download/v1.0/birman-typography-layouts-for-ubuntu-v1.0.tgz && \
-    tar xf /tmp/typo-birman-master.tar.gz -C /tmp && \
-    cd /tmp/birman-typography-layouts-for-ubuntu && \
-    sudo /tmp/birman-typography-layouts-for-ubuntu/install.sh
-    /
-    ```
 
-2. Откройте терминал (Ctrl+Alt+T), вставьте команду и нажмите клавишу Enter.
+3. Откройте терминал (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), вставьте команду и нажмите клавишу Enter.
 
-    Эта команда установит обе раскладки в системе под названием «Russian (Typographic by Ilya Birman)» и «English (Typographic by Ilya Birman)».
+    Эта команда установит обе раскладки в системе под названием «Russian (Typographic by Ilya Birman)» и «English (Typographic by Ilya Birman)». В конфигурации Xorg они называются `ru(birman)` и `en(birman)`.
     
-    Включать эти раскладки, правый Alt и их переключение надо самостоятельно в настройках системы. Что именно надо делать — зависит от дистрибутива.
+    Включать эти раскладки, правый <kbd>Alt<kbd> и их переключение надо самостоятельно в настройках системы. Что именно надо делать — зависит от дистрибутива.
 
-3. Дождитесь зелёного сообщения об успехе. В процессе установки может потребоваться ввод пароля.
+4. Дождитесь зелёного сообщения об успехе. В процессе установки может потребоваться ввод пароля.
 
-4. **Обязательно перелогиньтесь после установки.**
+5. **Обязательно перезагрузитесь после установки.**
