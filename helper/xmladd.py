@@ -14,7 +14,7 @@ for item in root.findall("./layoutList/layout"):
     if (item.findtext("./configItem/name") == "us") and item.findtext("./configItem/shortDescription") == "en" and item.findtext("./configItem/languageList/iso639Id") == "eng":
         parent = item.find("./variantList")
         for otheritem in parent.findall('./variant'):
-            if otheritem.findtext('./configItem/name') == 'typo-birman-en':
+            if otheritem.findtext('./configItem/name') == 'birman':
                 parent.remove(otheritem)
         if parent:
             tree_en = ET.parse(variant_en)
@@ -23,8 +23,9 @@ for item in root.findall("./layoutList/layout"):
     if (item.findtext("./configItem/name") == "ru") and item.findtext("./configItem/shortDescription") == "ru" and item.findtext("./configItem/languageList/iso639Id") == "rus":
         parent = item.find("./variantList")
         for otheritem in parent.findall('./variant'):
-            if otheritem.findtext('./configItem/name') == 'typo-birman-ru':
+            if otheritem.findtext('./configItem/name') == 'birman':
                 parent.remove(otheritem)        
+        print(parent)
         if parent:
             tree_ru = ET.parse(variant_ru)
             root_ru = tree_ru.getroot()
