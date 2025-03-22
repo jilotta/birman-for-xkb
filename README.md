@@ -19,14 +19,14 @@
 
 2. Скопируйте команду, приведенную ниже:
 
-    ```bash
-python3 -c "import os, sys
-from urllib.request import urlopen
-p = 'https://github.com/jilotta/birman-for-xkb/archive/refs/tags/v3.7.tar.gz'
-with open('/tmp/birman.tgz','bw') as f: f.write(urlopen(p).read())" &&
-tar xf /tmp/birman.tgz -C /tmp && \
-cd /tmp/birman-for-xkb-3.7 && \
-sudo /tmp/birman-for-xkb-3.7/install.sh
+    ```
+    python3 -c "import os, sys
+    from urllib.request import urlopen
+    p = 'https://github.com/jilotta/birman-for-xkb/archive/refs/tags/v3.7.tar.gz'
+    with open('/tmp/birman.tgz','bw') as f: f.write(urlopen(p).read())" &&
+    tar xf /tmp/birman.tgz -C /tmp && \
+    cd /tmp/birman-for-xkb-3.7 && \
+    sudo /tmp/birman-for-xkb-3.7/install.sh
     ```
 
 3. Откройте терминал (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd>), вставьте команду и нажмите клавишу Enter.
