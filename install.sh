@@ -1,8 +1,8 @@
 #!/bin/bash
 
 if (( $EUID != 0 )); then
-    echo "\033[0;31mЗапускайте с правами суперпользователя!" &>2
-    echo "Please run as root!\033[0m" &>2
+    echo -e "\033[0;31mЗапускайте с правами суперпользователя!" >&2
+    echo -e "Please run as root!\033[0m" >&2
     exit
 fi
 
